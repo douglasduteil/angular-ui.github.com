@@ -27,7 +27,7 @@ define(["require", 'root'], function (require, root) {
           var id, pathUrl;
           pathUrl = MODULES_PATH + cat + '/' + mod.dir + '/';
           id = pathUrl + 'doc/doc.js';
-          root[id] = '../' + pathUrl;
+          root[id] = pathUrl;
 
           $scope[cat + 'Views'].push({
             navName: mod.name, fileName: '' + pathUrl + 'doc/doc', "tag": '' + cat + '-' + mod.dir

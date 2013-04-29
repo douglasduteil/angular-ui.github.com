@@ -40,7 +40,7 @@
    -----------------------------------------------------------------------------*/
   requirejs(
     {
-      baseUrl : '/',
+      baseUrl : './',
       paths: {
         'jquery': _ + 'jquery.min',
         'twitter-bootstrap': _ + 'bootstrap',

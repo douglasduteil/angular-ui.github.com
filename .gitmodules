@@ -1,3 +1,6 @@
 [submodule "modules/directives/ui-ace"]
 	path = modules/directives/ui-ace
 	url = git://github.com/douglasduteil/ui-ace.git
+[submodule "modules/directives/ui-codemirror"]
+	path = modules/directives/ui-codemirror
+	url = git://github.com/douglasduteil/ui-codemirror.git

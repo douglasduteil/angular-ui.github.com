@@ -4,6 +4,10 @@
       {
         "name": "ACE IDE",
         "dir" : "ui-ace"
+      },
+      {
+        "name": "CodeMirror IDE",
+        "dir" : "ui-codemirror"
       }
     ],
     "filters": []

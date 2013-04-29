@@ -1,5 +1,5 @@
 (function () {
-  var _ = "../vendor/";
+  var _ = "vendor/";
 
 
   /* =Root storage
@@ -40,6 +40,7 @@
    -----------------------------------------------------------------------------*/
   requirejs(
     {
+      baseUrl : '/',
       paths: {
         'jquery': _ + 'jquery.min',
         'twitter-bootstrap': _ + 'bootstrap',
@@ -47,12 +48,12 @@
         'angular': _ + 'angular.min'
       },
       shim: {
-        'xapp': { deps: ['twitter-bootstrap', 'prettifyDirective', 'angular'] },
-        'prettifyDirective': { deps: ['prettyPrint', 'angular'] },
+        'core/xapp': { deps: ['twitter-bootstrap', 'core/prettifyDirective', 'angular'] },
+        'core/prettifyDirective': { deps: ['prettyPrint', 'angular'] },
         'twitter-bootstrap': { deps: ['jquery'] }
       }
     },
-    ['xapp'],
+    ['core/xapp'],
     function () {
       angular.bootstrap(document, ['x']);
     });

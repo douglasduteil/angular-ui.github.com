@@ -35,16 +35,12 @@ body {
 /* =Side bar
 -----------------------------------------------------------------------------*/
 .bs-docs-sidenav.affix {
-    top: 40px;
+    position: relative;
 }
 
 .bs-docs-sidenav.affix-bottom {
     position: absolute;
     top: auto;
-}
-
-.side {
-    padding-top: 60px;
 }
 
 .side li > * {
@@ -95,7 +91,7 @@ hr {
         border-radius: 4px;
     }
 
-    .highlight {
+    .prettyprint {
         display: none;
     }
 }
@@ -109,14 +105,28 @@ hr {
         line-height: 1;
     }
 
+    .side {
+        padding-top: 60px;
+    }
+
+    .bs-docs-sidenav.affix {
+        top: 40px;
+        position: fixed;
+    }
 }
 
 /* Tablets/desktops and up */
 @media screen and (min-width: 992px) {
 
+    .bs-docs-sidenav.affix {
+        width : 220px;
+    }
 }
 
 /* Large desktops and up */
 @media screen and (min-width: 1200px) {
 
+    .bs-docs-sidenav.affix {
+        width : 267px;
+    }
 }

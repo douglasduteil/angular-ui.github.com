@@ -1,0 +1,3 @@
+[submodule "modules/directives/ui-ace"]
+	path = modules/directives/ui-ace
+	url = git://github.com/douglasduteil/ui-ace.git

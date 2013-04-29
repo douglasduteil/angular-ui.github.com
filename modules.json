@@ -1,6 +1,11 @@
 {
   "modules": {
-    "directives": [],
+    "directives": [
+      {
+        "name": "ACE IDE",
+        "dir" : "ui-ace"
+      }
+    ],
     "filters": []
   }
 }

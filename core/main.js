@@ -1,5 +1,5 @@
 (function () {
-  var _ = "vendor/";
+  var _ = "assets/vendor/";
 
 
   /* =Root storage

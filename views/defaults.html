@@ -1,0 +1,21 @@
+<section id="defaults">
+
+    <div class="page-header">
+        <h1>Global Defaults</h1>
+    </div>
+    <p>You can specify default options for most AngularUI directives. This way you don't have to pass them every single
+        time you call the directive. Passed options will be merged onto defaults, overriding any pre-existing keys.</p>
+
+    <p>Simply declare the global config on your module: <code>module.value('ui.config', {})</code>. Each directive
+        should be namespaced by the directive name (without the <code>ui-</code> prefix).</p>
+
+    <p>Here's an example to make <a href="#directives-select2">ui-select2</a> clearable by default:</p>
+    <pre class="prettyprint">
+        var myModule = angular.module('myModule', ['ui']);
+        myModule.value('ui.config', {
+           select2: {
+              allowClear: true
+           }
+        });
+    </pre>
+</section>

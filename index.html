@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8/>
+    <title>Test decentralized Angular UI Doc</title>
+
+    <!-- Le css -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cssLoading.css">
+    <link rel="stylesheet" href="css/prettify.css">
+
+</head>
+
+<body>
+
+
+<!-- Le header
+====================================<div class="movingBallLineG">
+</div>
+<div id="movingBallG_1" class="movingBallG">
+</div>============== -->
+<header id="overview" class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="span3">
+                <img src="img/UI_Shield.png" alt="" width="200" height="211" id="bigLogo"/>
+            </div>
+            <div class="span9">
+
+                <h1>Angular UI</h1>
+
+                <h3>Test decentralized Angular UI Doc</h3>
+
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<div id="loadingAnimation" ng-show="isLoading">
+    <div id="bowl_ringG">
+        <div class="ball_holderG">
+            <div class="ballG">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Le main
+================================================== -->
+<div class="container main ng-cloak" ng-controller="FooCtrl" ng-hide="isLoading" ng-cloak>
+    <div class="row">
+        <div class="span3 side">
+            <ul class="nav nav-list bs-docs-sidenav">
+                <li ng-repeat="v in introViews"><a href="#{{v.fileName}}"> {{v.navName}} </a></li>
+                <li><a href="#directives"><b>Directives</b></a></li>
+                <li ng-repeat="v in directivesViews"><a href="#{{v.tag}}"> {{v.navName}} </a></li>
+                <li><a href="#filters"><b>Filters</b></a></li>
+                <li ng-repeat="v in filtersViews"><a href="#{{v.tag}}"> {{v.navName}} </a></li>
+            </ul>
+        </div>
+        <div class="span8 offset1 content">
+            <div id="welcome" class="bs-docs-section-header">
+                <h1>Welcome</h1>
+
+                <p class="lead">Welcome to the Bootstrap documentation, the living, interactive style and code guide for
+                    all things Bootstrap. If you're new here, continue reading to learn how to get started. Otherwise,
+                    carry on you beautiful person you.</p>
+            </div>
+
+            <div ng-repeat="v in introViews">
+                <div ng-include src="'views/' + v.fileName + '.html'"></div>
+                <hr ng-show="!$last">
+            </div>
+
+            <div id="directives" class="bs-docs-section-header">
+                <h1>Directives</h1>
+
+                <p class="lead">Dozens of reusable components built to provide your application.</p>
+            </div>
+
+            <div ng-repeat="v in directivesViews">
+                <div ng-include src="'' + v.fileName + '.html'"></div>
+                <hr ng-show="!$last">
+            </div>
+
+            <div id="filters" class="bs-docs-section-header">
+                <h1>Filters</h1>
+
+                <p class="lead">Some useful filters.</p>
+            </div>
+
+            <div ng-repeat="v in filtersViews">
+                <div ng-include src="'' + v.fileName + '.html'"></div>
+                <hr ng-show="!$last">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Le javascript
+================================================== -->
+<script data-main="core/main.js" src="vendor/require.min.js"></script>
+
+</body>
+
+</html>

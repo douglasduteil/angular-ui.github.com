@@ -1,0 +1,122 @@
+/* =Global rules
+-----------------------------------------------------------------------------*/
+[ng-cloak], .ng-cloak {
+    display: none
+}
+
+body {
+    background: #fff;
+    color: #444;
+}
+
+/* =Header
+-----------------------------------------------------------------------------*/
+.jumbotron {
+    background: #2d364c;
+    background: -moz-linear-gradient(45deg, #2d364c 0%, #3d549a 100%);
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #2d364c), color-stop(100%, #3d549a));
+    background: -webkit-linear-gradient(45deg, #2d364c 0%, #3d549a 100%);
+    background: -o-linear-gradient(45deg, #2d364c 0%, #3d549a 100%);
+    background: -ms-linear-gradient(45deg, #2d364c 0%, #3d549a 100%);
+    background: linear-gradient(45deg, #2d364c 0%, #3d549a 100%);
+    color: #F1F1F1;
+    text-align: center;
+    border-bottom: #B3B3B3 solid 10px;
+    border-radius: 0;
+}
+
+.jumbotron h1 {
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+
+/* =Side bar
+-----------------------------------------------------------------------------*/
+.bs-docs-sidenav.affix {
+    top: 40px;
+}
+
+.bs-docs-sidenav.affix-bottom {
+    position: absolute;
+    top: auto;
+}
+
+.side {
+    padding-top: 60px;
+}
+
+.side li > * {
+    margin-right: 2em;
+}
+
+/* =Main content
+-----------------------------------------------------------------------------*/
+
+.content h1:first-child {
+    margin-top: 0;
+}
+
+hr {
+    margin: 5em 0;
+}
+
+.bs-docs-section-header {
+    padding-top: 60px;
+    color: #4661B9;
+    border-bottom: 5px solid #4661B9;
+}
+
+/* =Add on
+-----------------------------------------------------------------------------*/
+.ace_editor_wrapper {
+    position: relative;
+    height: 200px
+}
+
+.ace_editor {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.CodeMirror {
+    height: 200px !important;
+}
+
+/* = Responsive  variations
+-----------------------------------------------------------------------------*/
+
+/* Hide code snippets on mobile devices */
+@media screen and (max-width: 480px) {
+    .bs-docs-example {
+        border-radius: 4px;
+    }
+
+    .highlight {
+        display: none;
+    }
+}
+
+/* Tablets and up */
+@media screen and (min-width: 768px) {
+
+    .bs-docs-section-header h1 {
+        font-size: 80px;
+        font-size: 8rem;
+        line-height: 1;
+    }
+
+}
+
+/* Tablets/desktops and up */
+@media screen and (min-width: 992px) {
+
+}
+
+/* Large desktops and up */
+@media screen and (min-width: 1200px) {
+
+}

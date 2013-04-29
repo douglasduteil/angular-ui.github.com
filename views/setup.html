@@ -1,0 +1,29 @@
+<section id="setup">
+    <div class="page-header">
+        <h1>Getting Started</h1>
+    </div>
+    <p>Setup is easy and designed to be highly modular. Just follow these steps <strong>in order</strong>:</p>
+    <ol>
+        <li><span class="label label-info">Optional</span> Include the <a href="#ieshiv">Internet Explorer Shiv</a> (<a
+                href="http://docs.angularjs.org/guide/ie">read why here</a>)
+        </li>
+        <li><span class="label label-info">Optional</span> Include jQuery if using jQuery Plugins</li>
+        <li><span class="label label-info">Optional</span> Include any jQuery(UI) plugins you wish to use (<strong>plugins
+            are not bundled with AngularUI</strong>)
+        </li>
+        <li>Include AngularJS</li>
+        <li>Include AngularUI in one of the following ways:
+            <ul>
+                <li>Include the entire library (located in <code>/build</code> directory)</li>
+                <li>Include the <code>/common/module.js</code> and any directives or filters you wish to use</li>
+                <li><a ng-click="showBuildModal()">Create a custom build</a> and include it</li>
+            </ul>
+        </li>
+        <li>Add the <code>'ui'</code> module as a dependency:
+            <pre class="prettyprint">angular.module('myModule', ['ui'])</pre>
+        </li>
+        <li><span class="label label-info">Optional</span> Setup your <a href="#defaults">Global Defaults</a> for
+            plugins and directives
+        </li>
+    </ol>
+</section>
